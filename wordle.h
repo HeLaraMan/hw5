@@ -22,4 +22,9 @@ std::set<std::string> wordle(
     const std::string& floating,
     const std::set<std::string>& dict);
 
+bool isValid(std::string& s,  const std::set<std::string>& dict);
+bool strContains(std::string str1, const std::string& str2);
+void wordGenerator(std::string& current, const std::string& fixed, std::string& floating,std::string& floatingChars,
+    const std::set<std::string>& dict, std::set<std::string>& wordSet, int pos,int counter);
+
 #endif
